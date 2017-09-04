@@ -16,7 +16,7 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -26,6 +26,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/catface.png">
 
+  <link rel="import" href="warnings.html">
+
 </head>
 <body>
 
@@ -34,13 +36,45 @@
   <div class="container">
 
     <div class="row">
-      <div class="one-third column" style="margin-top: 25%">
-        <img class="img-circle" src="images/fonzi.png">
-        <h4 class='title'>Alfonso Vazquez</h4>
-        <p>Just a basic site, with basic ideas from a Software Engineer in Test.<a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      <div class="one-third column" style="margin-top: 5%">
+        <!--Navigation-->
+        <div class="band navigation">
+          <nav class="container primary">
+            <img class="img-circle" src="images/fonzi.png">
+            <hr>
+            <h5 class='title'>Alfonso Vazquez</h5>
+            <p>Just a basic site, with basic ideas from a Software Engineer in Test.</p>
+            <hr>
+            <ul>
+              <li><a href="http://www.getskeleton.com">Who am I?</a></li>
+              <li><a href="http://www.getskeleton.com">Resume</a></li>
+            </ul>
+            <hr>
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+          </div>
+        </nav>
       </div>
+
+
+      <div class="two-thirds column" style="margin-top: 5%">
+        <div> hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello </div>
+
+        <script>
+          var link = document.querySelector('link[rel="import"]');
+          var content = link.import;
+
+          // Grab DOM from warning.html's document.
+          var el = content.querySelector('.warning');
+
+          document.body.appendChild(el.cloneNode(true));
+        </script>
+
+      </div>
+
     </div>
   </div>
+
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

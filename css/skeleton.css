@@ -156,11 +156,11 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #1EAEDB; }
-a:hover {
-  color: #0FA0CE; }
 
+a:link {color: #000000; text-decoration: none; }
+a:active {color: #0000ff; text-decoration: none; }
+a:visited {color: #008000; text-decoration: none; }
+a:hover {color: #008000; text-decoration: none; }
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -286,8 +286,9 @@ label > .label-body {
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 ul {
-  list-style: circle inside; }
+  list-style: none; }
 ol {
   list-style: decimal inside; }
 ol, ul {
